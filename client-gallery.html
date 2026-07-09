@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Gallery | Ernest-Shoot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Ernest<span>-Shoot</span></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="client-gallery.html" class="active">Client Gallery</a>
+        <a href="booking.html">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Private Client Gallery</h2>
+    <p class="section-intro">Clients can enter a private code to view and download their finished photos.</p>
+
+    <div class="client-box">
+      <label for="clientCode">Enter Client Code</label>
+      <input type="text" id="clientCode" placeholder="Example: CLIENT123">
+      <br><br>
+      <button class="btn" onclick="checkClientCode()">Open Gallery</button>
+      <p id="codeMessage" style="margin-top: 15px;"></p>
+    </div>
+
+    <div id="privateGallery" class="hidden">
+      <h2>Client Photos</h2>
+      <p class="section-intro">These are sample download cards. Replace the links with your real edited photo files.</p>
+
+      <div class="gallery-grid">
+        <div class="download-card">
+          <div class="photo-box gold">Client Photo 1</div>
+          <a class="btn" href="#"> download>Download</a>
+        </div>
+        <div class="download-card">
+          <div class="photo-box gray">Client Photo 2</div>
+          <a class="btn" href="#" download>Download</a>
+        </div>
+        <div class="download-card">
+          <div class="photo-box green">Client Photo 3</div>
+          <a class="btn" href="#" download>Download</a>
+        </div>
+
+        <div class="download-card">
+          <div class="photo-box green">Client Photo 4</div>
+
+        <a class="btn"
+          href="https://drive.google.com/drive/folders/1vJuU-YsbMlc0bQH6iwgChNHRVX_UEi7I"
+           target="_blank">
+           Open Gallery
+         </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ernest-Shoot. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
