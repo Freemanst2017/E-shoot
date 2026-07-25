@@ -20,48 +20,171 @@
     </div>
   </header>
 
-  <section class="section">
-    <h2>Photoshoot Packages</h2>
-    <p class="section-intro">A part-payment must be made to secure a spot</p>
-  
 
-    <div class="cards">
-      <div class="card">
-        <h3>Indoor Portrait Session</h3>
-        <p class="price">$200</p>
-        <ul>
-          <li>45-minute session</li>
-          <li>1 outfit</li>
-          <li>5 Edited Photos</li>
-          <li>Private gallery access</li>
-        </ul>
-      </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-      <div class="card">
-        <h3>Outdoor Portrait Session</h3>
-        <p class="price">$250</p>
-        <ul>
-          <li>45-minute session</li>
-          <li>1 outfit</li>
-          <li>5 Edited Photos</li>
-          <li>Location-based photoshoot</li>
-          <li>Private gallery access</li>
-        </ul>
-      </div>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-      <div class="card">
-        <h3>Add-ons</h3>
-        <p class="price">+$50</p>
-        <ul>
-          <li>Additional outfit</li>
-          <li>4 Extra edited photos</li>
-          <li>Extra time available</li>
-          <li>Custom background editing</li>
-        </ul>
-      </div>
+  <title>Services | Ernest-Shoot</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header page-header">
+    <div class="navbar container">
+
+      <a href="index.html" class="logo">
+        Ernest<span>-Shoot</span>
+      </a>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+      </nav>
+
     </div>
-  </section>
-  
+  </header>
+
+
+  <main>
+
+    <section class="page-banner">
+      <div class="container">
+        <p class="section-label">Photography Packages</p>
+        <h1>Services</h1>
+
+        <section class="payment-bar">
+          <div>
+            <h3>Secure Your Photoshoot</h3>
+            <p>A $50 deposit is required to SECURE your session.</p>
+          </div>
+        
+          <a href="https://cash.app/$Erne45" target="_blank" class="pay-btn">
+            Pay with Cash App
+          </a>
+          <div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+    <section class="services section">
+
+      <div class="container">
+
+        <div class="pricing-grid">
+
+          <article class="pricing-card">
+            <p class="package-name">Indoor Session</p>
+
+            <div class="price">
+              <span>$</span>
+              <strong>200</strong>
+            </div>
+
+            <ul>
+              <li>45-minute session</li>
+              <li>One outfit</li>
+              <li>Professionally edited photographs</li>
+              <li>Private online gallery</li>
+              <li>Digital delivery</li>
+            </ul>
+
+            <a
+              href="booking.html?package=Indoor%20Session"
+              class="button button-dark"
+            >
+              Book Indoor
+            </a>
+          </article>
+
+
+          <article class="pricing-card featured-package">
+            <span class="popular-label">Most Popular</span>
+
+            <p class="package-name">Outdoor Session</p>
+
+            <div class="price">
+              <span>$</span>
+              <strong>250</strong>
+            </div>
+
+            <ul>
+              <li>45-minute session</li>
+              <li>One outfit</li>
+              <li>Professionally edited photographs</li>
+              <li>Private online gallery</li>
+              <li>Location assistance</li>
+            </ul>
+
+            <a
+              href="booking.html?package=Outdoor%20Session"
+              class="button button-primary"
+            >
+              Book Outdoor
+            </a>
+          </article>
+
+
+          <article class="pricing-card">
+            <p class="package-name">Event Coverage</p>
+
+            <div class="price custom-price">
+              <strong>Custom</strong>
+            </div>
+
+            <ul>
+              <li>Birthday and event coverage</li>
+              <li>Custom duration</li>
+              <li>Professionally edited photographs</li>
+              <li>Private online gallery</li>
+              <li>Digital delivery</li>
+            </ul>
+
+            <a
+              href="booking.html?package=Event%20Coverage"
+              class="button button-dark"
+            >
+              Request Quote
+            </a>
+          </article>
+
+        </div>
+       
+       
+        <div class="card">
+          <h3>Add-ons</h3>
+          <p class="price">+$50</p>
+          <ul>
+            <li>Additional outfit</li>
+            <li>4 Extra edited photos</li>
+            <li>Extra time available</li>
+            <li>Custom background editing</li>
+          </ul>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
   <footer>
     <p>&copy; 2026 Ernest-Shoot. All rights reserved.</p>
   </footer>
