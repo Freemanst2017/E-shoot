@@ -24,3 +24,13 @@ function sendBookingMessage(event) {
   status.textContent = 'Thank you. Your booking request has been prepared. Ernest-Shoot will contact you soon.';
   status.style.color = '#d4a24c';
 }
+
+const datePicker = document.getElementById("date-picker");
+const formattedDate = document.getElementById("formatted-date");
+
+if (datePicker && formattedDate) {
+  datePicker.addEventListener("change", () => {
+    const [year, month, day] = datePicker.value.split("-");
+    formattedDate.value = `${month}/${day}/${year}`;
+  });
+}
